@@ -15,4 +15,6 @@ requires 'Text::Demoroniser';
 test_requires 'Test::More';
 extra_tests;
 
+resources repository => 'http://github.com/bricas/html-formfu-filter-demoroniser';
+
 WriteAll;
