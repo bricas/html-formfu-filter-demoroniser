@@ -69,7 +69,7 @@ alternative.
 
 =item * L<HTML::FormFu>
 
-=item * L<Text::Demoronise>
+=item * L<Text::Demoroniser>
 
 =back
 
