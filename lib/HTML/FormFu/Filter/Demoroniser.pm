@@ -50,7 +50,7 @@ alternatives.
 
 =head2 filter( $value )
 
-Filters C<$value> through L<Text::Demoronise>. By default it will use 
+Filters C<$value> through L<Text::Demoronise|Text::Demoronise>. By default it will use 
 C<demoroniser_utf8>, though if you specify any text other than "utf8" in the 
 C<encoding> option, it will convert problem characters to an ASCII 
 alternative.
@@ -67,9 +67,9 @@ alternative.
 
 =over 4
 
-=item * L<HTML::FormFu>
+=item * L<HTML::FormFu|HTML::FormFu>
 
-=item * L<Text::Demoroniser>
+=item * L<Text::Demoroniser|Text::Demoroniser>
 
 =back
 
