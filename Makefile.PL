@@ -9,7 +9,7 @@ perl_version '5.008';
 name 'HTML-FormFu-Filter-Demoroniser';
 all_from 'lib/HTML/FormFu/Filter/Demoroniser.pm';
 
-requires 'HTML::FormFu';
+requires 'HTML::FormFu' => '0.09000';
 requires 'Text::Demoroniser';
 
 test_requires 'Test::More';
