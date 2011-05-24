@@ -1,4 +1,4 @@
-use inc::Module::Install 0.91;
+use inc::Module::Install 1.00;
 
 if ( -e 'MANIFEST.SKIP' ) {
     system( 'pod2text lib/HTML/FormFu/Filter/Demoroniser.pm > README' );
@@ -13,6 +13,7 @@ requires 'HTML::FormFu';
 requires 'Text::Demoroniser';
 
 test_requires 'Test::More';
+
 extra_tests;
 
 resources repository => 'http://github.com/bricas/html-formfu-filter-demoroniser';

@@ -1,15 +1,13 @@
 package HTML::FormFu::Filter::Demoroniser;
 
-use strict;
-use warnings;
-
-use base 'HTML::FormFu::Filter';
-
+use Moose;
 use Text::Demoroniser;
+
+extends 'HTML::FormFu::Filter';
 
 our $VERSION = '0.02';
 
-__PACKAGE__->mk_item_accessors( 'encoding' );
+has 'encoding' => ( is => 'rw', traits => ['Chained'] );
 
 sub filter {
     my ( $self, $value ) = @_;
@@ -19,6 +17,8 @@ sub filter {
         ? Text::Demoroniser::demoroniser_utf8( $value )
         : Text::Demoroniser::demoroniser( $value );
 }
+
+__PACKAGE__->meta->make_immutable;
 
 1;
 
@@ -79,7 +79,7 @@ Brian Cassidy E<lt>bricas@cpan.orgE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2009 by Brian Cassidy
+Copyright 2009-2011 by Brian Cassidy
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
