@@ -29,7 +29,3 @@
 
 # No tarballs!
 \.gz$
-
-# No test input files or etc files
-^formats
-^etc
